@@ -6,7 +6,7 @@
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="an Online Platoform Connectin People based on Social Common Issue">
-    <meta name="author" content="Inovatik">
+    <meta name="author" content="snipthink">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
 	<meta property="og:site_name" content="" /> <!-- website name -->
@@ -66,7 +66,7 @@
                     <a class="nav-link page-scroll" href="#header">HOME <span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link page-scroll" href="about_us.html">FEATURES</a>
+                    <a class="nav-link page-scroll" href="about_us.html">ABOUT US</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link page-scroll" href="#features">FEATURES</a>
@@ -802,7 +802,7 @@ We invented Social MapWork to connect  citizens based on common/locality based i
                         <li class="address">Don't hesitate to give us a call or just use the contact form below</li>
                         <li><i class="fas fa-map-marker-alt"></i>Laxmipur Madhepur Madhubani Bihar 847408, India</li>
                         <li><i class="fas fa-phone"></i><a class="blue" href="tel:+918952872163">+918952872163</a></li>
-                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:info@nipthink.com">info@snipthink.com</a></li>
+                        <li><i class="fas fa-envelope"></i><a class="blue" href="mailto:info@nipthink.com">support@socialmapwork.com</a></li>
                     </ul>
                 </div> <!-- end of col -->
             </div> <!-- end of row -->
@@ -810,19 +810,20 @@ We invented Social MapWork to connect  citizens based on common/locality based i
                 <div class="col-lg-6 offset-lg-3">
                     
                     <!-- Contact Form -->
-                    <form id="contactForm" data-toggle="validator" data-focus="false">
+                    <form action="https://formspree.io/f/xqkoznlp"
+                    method="POST" >
                         <div class="form-group">
-                            <input type="text" class="form-control-input" id="cname" required>
+                            <input type="text" class="form-control-input" name="name" id="cname" required>
                             <label class="label-control" for="cname">Name</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <input type="email" class="form-control-input" id="cemail" required>
+                            <input type="email" name="email" class="form-control-input" id="cemail" required>
                             <label class="label-control" for="cemail">Email</label>
                             <div class="help-block with-errors"></div>
                         </div>
                         <div class="form-group">
-                            <textarea class="form-control-textarea" id="cmessage" required></textarea>
+                            <textarea class="form-control-textarea" id="cmessage" name="message" required></textarea>
                             <label class="label-control" for="cmessage">Your message</label>
                             <div class="help-block with-errors"></div>
                         </div>
