@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Child Safety Standards for Social Map Work by SnipThinK Software Private Limited: our zero-tolerance policy on child sexual abuse and exploitation (CSAE) and CSAM, how to report concerns, enforcement, and our child safety contact.">
+    <meta name="author" content="SnipThinK Software Private Limited">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://socialmapwork.com/child-safety">
+
+    <!-- OG Meta Tags -->
+    <meta property="og:site_name" content="Social Map Work" />
+    <meta property="og:title" content="Child Safety Standards | Social Map Work" />
+    <meta property="og:description" content="Social Map Work's zero-tolerance policy on child sexual abuse and exploitation (CSAE) and CSAM, and how to report a child safety concern." />
+    <meta property="og:url" content="https://socialmapwork.com/child-safety" />
+    <meta property="og:type" content="article" />
+
+    <!-- Website Title -->
+    <title>Child Safety Standards | Social Map Work</title>
+
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+    <link href="css/magnific-popup.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
+    <!-- Page-specific styles (scoped to .cs-page so other pages are unaffected) -->
+    <style>
+        .cs-page .ex-header {
+            /* darker green gradient than the default so white text stays readable */
+            background: linear-gradient(to bottom right, #06310f, #1a7e2e);
+        }
+        .cs-page .cs-hero-icon {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 5rem;
+            height: 5rem;
+            margin-bottom: 1.25rem;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.12);
+            border: 2px solid rgba(255, 255, 255, 0.35);
+            color: #ffffff;
+            font-size: 2.25rem;
+        }
+        .cs-page .ex-header h1 { color: #ffffff; margin-bottom: 0.75rem; }
+        .cs-page .cs-lead {
+            max-width: 42rem;
+            margin: 0 auto;
+            color: #ffffff;
+            font-size: 1.0625rem;
+            line-height: 1.75rem;
+        }
+        .cs-page .cs-updated { margin-top: 1rem; color: #e6f5e8; font-size: 0.875rem; }
+
+        .cs-page .cs-card {
+            margin-bottom: 1.75rem;
+            padding: 1.75rem 1.5rem;
+            border: 1px solid #1f3a24;
+            border-radius: 1rem;
+            background-color: #0d140f;
+            box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.45);
+        }
+        .cs-page .cs-card h2 {
+            display: flex;
+            align-items: center;
+            margin-bottom: 1rem;
+            color: #f1f1f8;
+            font: 700 1.375rem/1.875rem "Montserrat", sans-serif;
+        }
+        .cs-page .cs-card h2 .fas {
+            flex-shrink: 0;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 2.5rem;
+            height: 2.5rem;
+            margin-right: 0.875rem;
+            border-radius: 0.75rem;
+            background-color: rgba(40, 241, 47, 0.14);
+            color: #28f12f;
+            font-size: 1.125rem;
+        }
+        .cs-page .cs-card h3 {
+            margin: 1.25rem 0 0.5rem 0;
+            color: #f1f1f8;
+            font: 700 1rem/1.5rem "Montserrat", sans-serif;
+        }
+        .cs-page .cs-card p,
+        .cs-page .cs-card li {
+            font-size: 0.9375rem;
+            line-height: 1.625rem;
+        }
+        .cs-page .cs-card p:last-child { margin-bottom: 0; }
+        .cs-page .cs-list { margin: 0 0 1rem 0; padding-left: 0; list-style: none; }
+        .cs-page .cs-list li { position: relative; margin-bottom: 0.5rem; padding-left: 1.5rem; }
+        .cs-page .cs-list li:before {
+            content: "";
+            position: absolute;
+            top: 0.6rem;
+            left: 0.25rem;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 0.125rem;
+            background-color: #28f12f;
+        }
+        .cs-page .cs-card a { color: #28f12f; text-decoration: underline; }
+        .cs-page .cs-card a:hover { color: #ffffff; }
+        .cs-page a:focus-visible,
+        .cs-page .cs-report-btn:focus-visible {
+            outline: 3px solid #ffffff;
+            outline-offset: 3px;
+        }
+
+        .cs-page .cs-zero {
+            border-color: #28f12f;
+            background: linear-gradient(to bottom right, #0f2a14, #0d140f);
+        }
+        .cs-page .cs-report { border: 2px solid #28f12f; }
+        .cs-page .cs-report-btn {
+            display: inline-block;
+            margin: 0.5rem 0 1.25rem 0;
+            padding: 0.875rem 1.5rem;
+            border-radius: 2rem;
+            background-color: #28f12f;
+            color: #000000 !important;
+            font: 700 0.9375rem/1.25rem "Montserrat", sans-serif;
+            text-decoration: none !important;
+            transition: background-color 0.2s;
+        }
+        .cs-page .cs-report-btn:hover { background-color: #ffffff; }
+        .cs-page .cs-report-btn .fas { margin-right: 0.5rem; }
+        .cs-page .cs-warning {
+            display: flex;
+            margin: 0 0 1rem 0;
+            padding: 1rem 1.125rem;
+            border-left: 4px solid #ffc94d;
+            border-radius: 0.5rem;
+            background-color: #2a2210;
+        }
+        .cs-page .cs-warning .fas { margin: 0.3rem 0.75rem 0 0; color: #ffc94d; }
+        .cs-page .cs-warning p { margin-bottom: 0; color: #fff3d6; }
+
+        .cs-page .cs-contact dl { margin: 0; }
+        .cs-page .cs-contact .cs-row {
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid #1f3a24;
+        }
+        .cs-page .cs-contact .cs-row:last-child { border-bottom: 0; }
+        .cs-page .cs-contact dt {
+            width: 100%;
+            color: #b8c7bb;
+            font-weight: 600;
+            font-size: 0.8125rem;
+            text-transform: uppercase;
+            letter-spacing: 0.04em;
+        }
+        .cs-page .cs-contact dd { width: 100%; margin: 0.125rem 0 0 0; font-size: 0.9375rem; overflow-wrap: anywhere; }
+        .cs-page .cs-contact code { color: #f1f1f8; background: transparent; font-size: 0.9375rem; }
+
+        @media (min-width: 768px) {
+            .cs-page .cs-card { padding: 2.25rem 2.5rem; }
+            .cs-page .cs-contact dt { width: 35%; padding-top: 0.125rem; }
+            .cs-page .cs-contact dd { width: 65%; margin-top: 0; }
+        }
+    </style>
+
+    <!-- Favicon  -->
+    <link rel="icon" href="images/favicon.png">
+</head>
+<body class="cs-page" data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-dark navbar-custom fixed-top">
+        <!-- Image Logo -->
+        <a class="navbar-brand logo-image" href="index.html"><img src="images/loho.png" alt="Social Map Work"></a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-awesome fas fa-bars"></span>
+            <span class="navbar-toggler-awesome fas fa-times"></span>
+        </button>
+        <!-- end of mobile menu toggle button -->
+
+        <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html#header">HOME</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="about_us.html">ABOUT US</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html#features">FEATURES</a>
+                </li>
+
+                <!-- Dropdown Menu -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle page-scroll" href="#details" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">DETAILS</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="https://forms.gle/uNXTBjxFjWwwAL218"><span class="item-text">JOIN US </span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="terms-conditions.html"><span class="item-text">TERMS CONDITIONS</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="privacy-policy.html"><span class="item-text">PRIVACY POLICY</span></a>
+                        <div class="dropdown-items-divide-hr"></div>
+                        <a class="dropdown-item" href="child-safety" aria-current="page"><span class="item-text">CHILD SAFETY</span></a>
+                    </div>
+                </li>
+                <!-- end of dropdown menu -->
+
+                <li class="nav-item">
+                    <a class="nav-link page-scroll" href="index.html#contact">CONTACT</a>
+                </li>
+            </ul>
+            <span class="nav-item social-icons">
+                <span class="fa-stack">
+                    <a href="https://www.facebook.com/socialmapwork" aria-label="Social Map Work on Facebook">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-facebook-f fa-stack-1x"></i>
+                    </a>
+                </span>
+                <span class="fa-stack">
+                    <a href="https://twitter.com/SocialMapWork" aria-label="Social Map Work on Twitter">
+                        <i class="fas fa-circle fa-stack-2x"></i>
+                        <i class="fab fa-twitter fa-stack-1x"></i>
+                    </a>
+                </span>
+            </span>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+
+    <main>
+        <!-- Hero -->
+        <header id="header" class="ex-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <span class="cs-hero-icon" aria-hidden="true"><i class="fas fa-shield-alt"></i></span>
+                        <h1>Child Safety Standards</h1>
+                        <p class="cs-lead">Social Map Work has zero tolerance for child sexual abuse and exploitation. These standards explain what we prohibit, how to report a concern, and what we do about it.</p>
+                        <p class="cs-updated">Last updated: <time datetime="2026-10-31">31 October 2026</time></p>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end of hero -->
+
+
+        <!-- Breadcrumbs -->
+        <div class="ex-basic-1">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="breadcrumbs" aria-label="Breadcrumb">
+                            <a href="index.html">Home</a><i class="fa fa-angle-double-right" aria-hidden="true"></i><span>Child Safety Standards</span>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of breadcrumbs -->
+
+
+        <!-- Policy Content -->
+        <div class="ex-basic-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-10 offset-lg-1">
+
+                        <section class="cs-card" id="introduction" aria-labelledby="introduction-title">
+                            <h2 id="introduction-title"><i class="fas fa-user-shield" aria-hidden="true"></i>Our Commitment</h2>
+                            <p>Social Map Work is a community platform developed by <strong>SnipThinK Software Private Limited</strong>. People use it to report and follow local civic issues on a shared map. We are committed to protecting our users, and especially minors, from sexual abuse, exploitation, harassment, and harmful content.</p>
+                            <p>These Child Safety Standards apply to everyone who uses the Social Map Work app and its related services, and to all content shared through them, including reports, photos, descriptions, comments, and profile information. They work together with our <a href="terms-conditions.html">Terms &amp; Conditions</a> and <a href="privacy-policy.html">Privacy Policy</a>.</p>
+                        </section>
+
+                        <section class="cs-card cs-zero" id="zero-tolerance" aria-labelledby="zero-tolerance-title">
+                            <h2 id="zero-tolerance-title"><i class="fas fa-ban" aria-hidden="true"></i>Zero-Tolerance Policy</h2>
+                            <p>Social Map Work strictly prohibits <strong>child sexual abuse and exploitation (CSAE)</strong>, including <strong>child sexual abuse material (CSAM)</strong>, grooming, sextortion, trafficking, and any other sexual exploitation of minors. A minor is anyone under 18 years of age.</p>
+                            <p>This applies with no exceptions: not for humour, fiction, art, "awareness", or any other stated purpose, and it covers real, drawn, digitally altered, and AI-generated material.</p>
+                        </section>
+
+                        <section class="cs-card" id="prohibited" aria-labelledby="prohibited-title">
+                            <h2 id="prohibited-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Prohibited Activities</h2>
+                            <p>You must not use Social Map Work to do any of the following:</p>
+                            <ul class="cs-list">
+                                <li>Upload, share, request, store, or distribute CSAM, or links to it.</li>
+                                <li>Groom a minor, or otherwise build contact with a minor for the purpose of sexual exploitation.</li>
+                                <li>Sexually harass, coerce, threaten, or extort a minor, including sextortion.</li>
+                                <li>Use any community feature (reports, comments, profiles, location information, or contact details) to find, contact, or target minors for exploitation.</li>
+                                <li>Share sexualised or exploitative images, videos, or links involving minors.</li>
+                                <li>Facilitate, advertise, or promote the trafficking or any other abuse of a minor.</li>
+                            </ul>
+                            <p>Attempting, encouraging, or helping someone else to do any of these things is also prohibited.</p>
+                        </section>
+
+                        <section class="cs-card cs-report" id="report" aria-labelledby="report-title">
+                            <h2 id="report-title"><i class="fas fa-flag" aria-hidden="true"></i>Reporting Child Safety Concerns</h2>
+                            <p>If you see content or behaviour on Social Map Work that may involve the sexual abuse or exploitation of a minor, report it to our child safety contact by email. You do not need an account to report.</p>
+                            <a class="cs-report-btn" href="mailto:support@socialmapwork.com?subject=Child%20Safety%20Concern%20-%20Social%20Map%20Work"><i class="fas fa-envelope" aria-hidden="true"></i>Report a Child Safety Concern</a>
+                            <p>Email: <a href="mailto:support@socialmapwork.com?subject=Child%20Safety%20Concern%20-%20Social%20Map%20Work">support@socialmapwork.com</a>. Please put <strong>"Child Safety Concern"</strong> in the subject line.</p>
+
+                            <h3>What to include</h3>
+                            <ul class="cs-list">
+                                <li>A description of what you saw and where in the app you saw it.</li>
+                                <li>The username, report or post details, location shown on the map, and the date and time, if you have them.</li>
+                                <li>How we can contact you if we need more information (optional).</li>
+                            </ul>
+
+                            <div class="cs-warning" role="note">
+                                <i class="fas fa-exclamation-triangle" aria-hidden="true"></i>
+                                <p><strong>Do not attach, screenshot, download, or forward suspected CSAM</strong>, even to report it. Sharing this material can be a crime and causes further harm. Describe it in words and tell us where it is; we will locate it.</p>
+                            </div>
+
+                            <h3>If a child is in immediate danger</h3>
+                            <p>Contact your local emergency services first. In India, call <strong>112</strong> (emergency) or <strong>1098</strong> (CHILDLINE), or report online at the <a href="https://cybercrime.gov.in/" rel="noopener">National Cyber Crime Reporting Portal</a>. You can also report CSAM directly to the <a href="https://report.cybertip.org/" rel="noopener">NCMEC CyberTipline</a>.</p>
+                        </section>
+
+                        <section class="cs-card" id="enforcement" aria-labelledby="enforcement-title">
+                            <h2 id="enforcement-title"><i class="fas fa-gavel" aria-hidden="true"></i>Enforcement and Content Removal</h2>
+                            <p>We review every child safety report we receive and treat them as a priority. When we obtain actual knowledge of a violation of these standards, we take appropriate action, which may include:</p>
+                            <ul class="cs-list">
+                                <li>Removing the content or restricting access to it.</li>
+                                <li>Suspending or permanently terminating the accounts involved.</li>
+                                <li>Investigating and reviewing related content and accounts.</li>
+                                <li>Preserving relevant information where the law requires it, so it can be provided to law enforcement.</li>
+                                <li>Reporting confirmed CSAM to the appropriate authorities.</li>
+                            </ul>
+                            <p>Accounts terminated for child sexual abuse or exploitation are not reinstated.</p>
+                        </section>
+
+                        <section class="cs-card" id="authorities" aria-labelledby="authorities-title">
+                            <h2 id="authorities-title"><i class="fas fa-balance-scale" aria-hidden="true"></i>Cooperation With Authorities</h2>
+                            <p>Social Map Work complies with applicable child protection laws and regulations. We report confirmed CSAM to the <a href="https://report.cybertip.org/" rel="noopener">National Center for Missing &amp; Exploited Children (NCMEC)</a> or to the relevant regional authority, as applicable. In India, this includes reporting through the <a href="https://cybercrime.gov.in/" rel="noopener">National Cyber Crime Reporting Portal</a> and to law enforcement.</p>
+                            <p>We respond to valid legal requests from law enforcement agencies investigating the abuse or exploitation of children.</p>
+                        </section>
+
+                        <section class="cs-card" id="privacy" aria-labelledby="privacy-title">
+                            <h2 id="privacy-title"><i class="fas fa-lock" aria-hidden="true"></i>Privacy and Protection of Minors</h2>
+                            <p>Social Map Work is built for reporting civic issues, not for meeting or chatting with strangers. To reduce the risk of harm:</p>
+                            <ul class="cs-list">
+                                <li><strong>Photos:</strong> Photos should show the civic issue being reported. Do not upload photos in which a child can be identified. We remove photos that sexualise or exploit minors.</li>
+                                <li><strong>Location data:</strong> Location is used to place reports on the map. Do not use reports or map features to reveal or track where a child lives, studies, or spends time.</li>
+                                <li><strong>Personal information:</strong> Do not post a minor's name, phone number, school, or other identifying details in a report, comment, or profile. We collect and use personal information only as described in our <a href="privacy-policy.html">Privacy Policy</a>.</li>
+                                <li><strong>Community interactions:</strong> Contact with or about minors that is sexual, threatening, or harassing is prohibited and will be acted on under these standards.</li>
+                            </ul>
+                            <p>Parents and guardians who believe their child's information or image appears in Social Map Work can contact us at the address below to request its review and removal.</p>
+                        </section>
+
+                        <section class="cs-card cs-contact" id="contact" aria-labelledby="contact-title">
+                            <h2 id="contact-title"><i class="fas fa-envelope" aria-hidden="true"></i>Child Safety Contact</h2>
+                            <dl>
+                                <div class="cs-row"><dt>Company</dt><dd>SnipThinK Software Private Limited</dd></div>
+                                <div class="cs-row"><dt>Application</dt><dd>Social Map Work</dd></div>
+                                <div class="cs-row"><dt>Package</dt><dd><code>com.snipthink.socialmapwork</code></dd></div>
+                                <div class="cs-row"><dt>Child Safety Contact</dt><dd><a href="mailto:support@socialmapwork.com?subject=Child%20Safety%20Concern%20-%20Social%20Map%20Work">support@socialmapwork.com</a></dd></div>
+                                <div class="cs-row"><dt>Last Updated</dt><dd><time datetime="2026-10-31">31 October 2026</time></dd></div>
+                            </dl>
+                        </section>
+
+                        <a class="btn-outline-reg back" href="index.html">BACK</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of policy content -->
+    </main>
+
+
+    <!-- Footer -->
+    <footer>
+    <div class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="footer-col">
+                        <h4>Social <span style="color: chartreuse;"> MapWork</span></h4>
+                        <p>We're passionate about creating the best mobile apps for the People Which can support them in making Better Society</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-col middle">
+                        <h4>Important Links</h4>
+                        <ul class="list-unstyled li-space-lg">
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Our technical business partners <a class="turquoise" href="https://www.snipthink.org">snipthink.org</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-square"></i>
+                                <div class="media-body">Read our <a class="turquoise" href="terms-conditions.html">Terms & Conditions</a>, <a class="turquoise" href="privacy-policy.html">Privacy Policy</a>, <a class="turquoise" href="child-safety">Child Safety Standards</a></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="footer-col last">
+                        <h4>Social Media</h4>
+                        <span class="fa-stack">
+                            <a href="https://www.facebook.com/socialmapwork" aria-label="Facebook">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://twitter.com/SocialMapWork" aria-label="Twitter">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.instagram.com/socialmapwork" aria-label="Instagram">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="https://www.linkedin.com/company/social-mapwork" aria-label="LinkedIn">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- end of footer -->
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright © Social MapWorK - Mobile App Page Designed by <a href="https://www.snipthink.org">SnipThinK</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </footer>
+    <!-- end of copyright -->
+
+
+    <!-- Scripts (same set as the other pages; js/scripts.js expects these plugins) -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/jquery.magnific-popup.js"></script>
+    <script src="js/morphext.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
