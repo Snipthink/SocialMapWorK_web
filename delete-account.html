@@ -21,38 +21,23 @@
     <title>Delete your account - Social MapWork</title>
     
     <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
-    <style>
-        .da-page .text-container { margin-bottom: 2.25rem; }
-        .da-page .da-main { background: rgba(40,241,47,0.06); border-left: 4px solid #28f12f; padding: 1.5rem 1.5rem 1.25rem; margin-bottom: 2.5rem; }
-        .da-page .da-main h2 { font-size: 1.75rem; line-height: 2.25rem; margin-bottom: 1rem; }
-        .da-page .da-main ol { font-size: 1.125rem; line-height: 1.9rem; padding-left: 1.4rem; margin-bottom: 1rem; }
-        .da-page .da-main .da-note { font-size: 1.05rem; margin-bottom: 0; }
-        .da-page .da-btn { display: inline-block; padding: 0.9rem 1.75rem; margin: 0.25rem 0 1rem; border: 0.125rem solid #28f12f; border-radius: 2rem; background-color: #28f12f; color: #fff; font: 700 0.875rem/1.4 "Montserrat", sans-serif; text-decoration: none; text-align: center; max-width: 100%; transition: all 0.2s; }
-        .da-page .da-btn:hover, .da-page .da-btn:focus { background-color: transparent; color: #28f12f; text-decoration: none; }
-        @media (max-width: 576px) { .da-page .da-main { padding: 1.25rem 1rem 1rem; } .da-page .da-main h2 { font-size: 1.5rem; line-height: 2rem; } .da-page .da-btn { display: block; } }
-    </style>
+    <meta name="color-scheme" content="light dark">
+    <script>try{var t=localStorage.getItem('smw-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
-    <!-- Preloader -->
-	<div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
-    </div>
-    <!-- end of preloader -->
     
 
     <!-- Navbar -->
@@ -69,6 +54,10 @@
             <span class="navbar-toggler-awesome fas fa-times"></span>
         </button>
         <!-- end of mobile menu toggle button -->
+        <!-- Light / dark theme toggle -->
+        <button class="theme-toggle" type="button" aria-label="Switch colour theme">
+            <i class="fas fa-moon" aria-hidden="true"></i><i class="fas fa-sun" aria-hidden="true"></i>
+        </button>
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
@@ -248,7 +237,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="footer-col">
-                        <h4>Social <span style="color: chartreuse;"> MapWork</span></h4>
+                        <h4>Social <span class="accent"> MapWork</span></h4>
                         <p>We're passionate about creating the best mobile apps for the People Which can support them in making Better Society</p>
                     </div>
                 </div> <!-- end of col -->
@@ -326,6 +315,7 @@
     <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="js/theme.js"></script> <!-- Light / dark theme toggle -->
     
 </body>
 </html>

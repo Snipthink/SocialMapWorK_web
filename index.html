@@ -21,28 +21,23 @@
     <title>Social MapWorK - Connecting Local People Based on Their Common Social Problem They want to Fix</title>
     
     <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/magnific-popup.css" rel="stylesheet">
 	<link href="css/styles.css" rel="stylesheet">
+	<link href="css/theme.css" rel="stylesheet">
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
+    <meta name="color-scheme" content="light dark">
+    <script>try{var t=localStorage.getItem('smw-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
-    <!-- Preloader -->
-	<div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
-    </div>
-    <!-- end of preloader -->
     
 
     <!-- Navbar -->
@@ -59,6 +54,10 @@
             <span class="navbar-toggler-awesome fas fa-times"></span>
         </button>
         <!-- end of mobile menu toggle button -->
+        <!-- Light / dark theme toggle -->
+        <button class="theme-toggle" type="button" aria-label="Switch colour theme">
+            <i class="fas fa-moon" aria-hidden="true"></i><i class="fas fa-sun" aria-hidden="true"></i>
+        </button>
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
@@ -137,35 +136,24 @@
 
 
     <!-- Header -->
-    <header id="header" class="header">
-        <div class="header-content">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-6">
-                        <div class="text-container">
-                            <h2>MOBILE APP <br>FOR BETTER <span id="js-rotating">TOMORROW, GOVERNANCE,  CITIZENS </span></h2>
-                            <p>Download Social MapWork 
-                                and be a part of change .</p>
-                           <!--<p>and take the first step in the path for a better tomorrow.  We connect the needs of people with the people concerned using a new age tech platform which has the potential to empower the individual and transform the society at grassroot/local level, where it actually matters.</p>
-                           -->   <!-- <p class="p-large">Social MapWork is one of the easiest and feature packed social contribution apps for  the socity to fix common issue. Download it today!.</p>
-                           -->  <!--  <a class="btn-solid-lg page-scroll" href="#your-link"><i class="fab fa-apple"></i>APP STORE</a>
-                          -->  
-				<!--<a class="btn-solid-lg page-scroll" href="https://play.google.com/store/apps/details?id=com.snipthink.socialmapwork"><i class="fab fa-google-play"></i>PLAY STORE</a>
-                       -->
-								<a class="btn-solid-lg page-scroll" href="https://play.google.com/store/apps/details?id=com.snipthink.socialmapwork"><i class="fab fa-google-play"></i>PLAY STORE</a>
-				<p>Debug App will launch offcial at 30 8 pm for more enquiry contact us</p>
-
-			</div>
-                    </div> <!-- end of col -->
-                    <div class="col-lg-6">
-                        <div class="image-container">
-                            <img class="img-fluid" src="images/header-iphone.png" alt="alternative">
-                        </div> <!-- end of image-container -->
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of header-content -->
+    <header id="header" class="hero">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <p class="hero-prompt" aria-hidden="true">&gt; ./social_mapwork<span class="hero-cursor">_</span></p>
+                    <h1>Social <span class="accent">MapWork</span></h1>
+                    <p class="hero-tagline">Report local problems. Help your community.</p>
+                    <a class="btn-solid-lg" href="https://play.google.com/store/apps/details?id=com.snipthink.socialmapwork"><i class="fab fa-google-play" aria-hidden="true"></i>Get it on Google Play</a>
+                </div> <!-- end of col -->
+                <div class="col-lg-6">
+                    <div class="hero-phone">
+                        <img class="img-fluid" src="images/header-iphone.png" alt="Social MapWork app showing reported problems on a map">
+                    </div>
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
     </header> <!-- end of header -->
+    <!-- end of header -->
     <!-- end of header -->
 
 
@@ -261,288 +249,43 @@
     
 
     <!-- Features -->
-    <div id="features" class="tabs">
+    <section id="features" class="features">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2>FEATURES</h2>
-                    <div class="p-heading p-large">Social MapWork  designed for Everyone to Monitor Common Social Issue Based on Location </div>
-                </div> <!-- end of col -->
-            </div> <!-- end of row -->
-            <div class="row">
-
-                <!-- Tabs Links -->
-                <ul class="nav nav-tabs" id="Social MapWorkTabs" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab" aria-controls="tab-1" aria-selected="true"><i class="fas fa-search"></i>ISSUE TRACKING </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-tab-2" data-toggle="tab" href="#tab-2" role="tab" aria-controls="tab-2" aria-selected="false"><i class="fas fa-location-arrow"></i>ADD ISSUE</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="nav-tab-3" data-toggle="tab" href="#tab-3" role="tab" aria-controls="tab-3" aria-selected="false"><i class="fas fa-map"></i> MAP MONITORING</a>
-                    </li>
-                </ul>
-                <!-- end of tabs links -->
-
-
-                <!-- Tabs Content-->
-                <div class="tab-content" id="Social MapWorkTabsContent">
-                    
-                    <!-- Tab -->
-                    <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
-                        <div class="container">
-                            <div class="row">
-                                
-
-                             
-                                
-                                <!-- Icon Cards Pane -->
-                                <div class="col-lg-4">
-                                    
-                                    <div class="card left-pane first">
-                                        <div class="card-body">
-                                            <div class="text-wrapper">
-                                                 <h4 class="card-title"  style="color:rgb(0, 255, 0);">Washroom Spot</h4>
-                                              <!--  <p>Like any self improving process, everything starts with setting your goals and committing to them</p>
-                                              --> <p>We all know a tree or  corner of a road which has become an unofficial urinary area.  Mark it and let the authorities know where to build the next public toilet.</p>
-                                            </div>
-                                         <!--  <div class="card-icon">
-                                                <i class="far fa-map"></i>
-                                            </div>
-                                            --> 
-                                        </div>
-                                    </div>
-                                    <div class="card left-pane">
-                                        <div class="card-body">
-                                            <div class="text-wrapper">
-                                                 <h4 class="card-title"  style="color:rgb(0, 255, 0);">Select Dust Bin Size</h4>
-                                                <p>A dump is possibly the most common problem in India. It acts as a breeding ground for various diseases. Help us identify and put a bin there, play your part in the transformation of India into Swachh Bharat.</p>
-                                            </div>
-                                            <!--  <div class="card-icon">
-                                                <i class="far fa-map"></i>
-                                            </div>
-                                            --> 
-                                        </div>
-                                    </div>
-                                    <div class="card left-pane">
-                                        <div class="card-body">
-                                            <div class="text-wrapper">
-                                                 <h4 class="card-title"  style="color:rgb(0, 255, 0);">Food waste</h4>
-                                                <p>Know a marriage or birthday party where food is more than adequate. Let us know and we will get it to people who needs and  will cherish it.</p>
-                                            </div>
-                                            <!--  <div class="card-icon">
-                                                <i class="far fa-map"></i>
-                                            </div>
-                                            --> 
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end of icon cards pane -->
-
-                                <!-- Image Pane -->
-                                <div class="col-lg-4">
-                                    <img class="img-fluid" src="images/features-iphone-3.png" alt="alternative">
-                                </div>
-                                <!-- end of image pane -->
-                                
-                                <!-- Icon Cards Pane -->
-                                <div class="col-lg-4">
-                                    <div class="card right-pane first">
-                                        <div class="card-body">
-                                            <!--  <div class="card-icon">
-                                                <i class="far fa-map"></i>
-                                            </div>
-                                            --> 
-                                            <div class="text-wrapper">
-                                                 <h4 class="card-title"  style="color:rgb(0, 255, 0);">Cleanup issue</h4>
-                                                <p>People clean their houses and put the dirt on the sidewalk or the road. We all have seen it and ignored it for far too long. Not anymore. Know a pile of dirt or garbage which shouldn't be there, add a spot and we will take care of it.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card right-pane">
-                                        <div class="card-body">
-                                           <!--  <div class="card-icon">
-                                                <i class="far fa-map"></i>
-                                            </div>
-                                            --> 
-                                            <div class="text-wrapper">
-                                                <h4 class="card-title"  style="color:rgb(0, 255, 0);">Carcass</h4>
-                                                <p>We believe a deceased animal also deserves a respectable disposal. If you do too, let us know and we will dispose of it in the safest way possible.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="card right-pane">
-                                        <div class="card-body">
-                                           <!--  <div class="card-icon">
-                                                <i class="far fa-map"></i>
-                                            </div>
-                                            --> 
-                                            <div class="text-wrapper">
-                                                 <h4 class="card-title"  style="color:rgb(0, 255, 0);">Potholes </h4>
-                                                <p>More than 23 lakhs accidents and resulting in 7 lakh deaths in the last 5 years have happened in India. A lot of them are solely because of potholes in our roads. Add spots and identify them urgently to save lives.</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- end of icon cards pane -->
-
-                            </div> <!-- end of row -->
-                        </div> <!-- end of container -->
-                    </div> <!-- end of tab-pane -->
-                    <!-- end of tab -->
-
-                    <!-- Tab -->
-                    <div class="tab-pane fade" id="tab-2" role="tabpanel" aria-labelledby="tab-2">
-                        <div class="container">
-                            <div class="row">
-
-                                <!-- Image Pane -->
-                                <div class="col-md-4">
-                                    
-                                    <img class="img-fluid" src="images/features-iphone-1.png" alt="alternative">
-                                </div>
-                                <!-- end of image pane -->
-                                
-                                <!-- Text And Icon Cards Area -->
-                                <div class="col-md-8">
-                                    <div class="text-area">
-                                        <h3>Add Spot of issue you are facing or observering in Locality</h3>
-                                        <p>Add Spot enable access to users to raise common social issue. with the help of this features any users can report issue realted to all mention category</p>
-                                    </div> <!-- end of text-area -->
-                                    
-                                    <div class="icon-cards-area">
-                                            <div class="card">
-                                               <!--  <div class="card-icon">
-                                                <i class="far fa-map"></i>
-                                            </div>
-                                            --> 
-                                                <div class="card-body">
-                                                     <h4 class="card-title"  style="color:rgb(0, 255, 0);">Potholes</h4>
-                                                    <p>More than 23 lakhs accidents and resulting in 7 lakh deaths in the last 5 years have happened in India. A lot of them are solely because of potholes in our roads. Add spots and identify them urgently to save lives.</p>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-
-                                              <!--  <div class="card-icon">
-                                                <i class="far fa-map"></i>
-                                            </div>
-                                            --> 
-
-                                                <div class="card-body">
-                                                     <h4 class="card-title"  style="color:rgb(0, 255, 0);">Water Pollution</h4>
-                                                    <p>We all know a tree or  corner of a road which has become an unofficial urinary area.  Mark it and let the authorities know where to build the next public toilet.</p>
-                                                </div>
-                                            </div>
-
-                                            <div class="card">
-                                                <!--  <div class="card-icon">
-                                                <i class="far fa-map"></i>
-                                            </div>
-                                            --> 
-                                                <div class="card-body">
-                                                     <h4 class="card-title"  style="color:rgb(0, 255, 0);">Dustbin Required</h4>
-                                                    <p>A dump is possibly the most common problem in India. It acts as a breeding ground for various diseases. Help us identify and put a bin there, play your part in the transformation of India into Swachh Bharat.</p>
-                                                </div>
-                                            </div>
-                                            <div class="card">
-                                                <!--  <div class="card-icon">
-                                                <i class="far fa-map"></i>
-                                            </div>
-                                            --> 
-                                                <div class="card-body">
-                                                     <h4 class="card-title"  style="color:rgb(0, 255, 0);">Cleanup Issue</h4>
-                                                    <p>People clean their houses and put the dirt on the sidewalk or the road. We all have seen it and ignored it for far too long. Not anymore. Know a pile of dirt or garbage which shouldn't be there, add a spot and we will take care of it.</p>
-                                                </div>
-                                            </div>
-                                    </div> <!-- end of icon cards area -->
-                                </div> <!-- end of col-md-8 -->
-                                <!-- end of text and icon cards area -->
-
-                            </div> <!-- end of row -->
-                        </div> <!-- end of container -->
-                    </div> <!-- end of tab-pane -->
-                    <!-- end of tab -->
-
-                    <!-- Tab -->
-                    <div class="tab-pane fade" id="tab-3" role="tabpanel" aria-labelledby="tab-3">
-                        <div class="container">
-                            <div class="row">
-
-                                <!-- Text And Icon Cards Area -->
-                                <div class="col-md-8">
-                                    <div class="text-area">
-                                        <h3>Map Monitoring featurs </h3>
-                                        <p>  Which will share visibility of all social problem  spoted by Social MapWorK users in Map .</p>
-                                    </div> <!-- end of text-area -->
-                                   
-                                    <div class="icon-cards-area">
-                                        <div class="card">
-                                             <!--  <div class="card-icon">
-                                                <i class="far fa-map"></i>
-                                            </div>
-                                            --> 
-                                            <div class="card-body">
-                                                 <h4 class="card-title"  style="color:rgb(0, 255, 0);">Red Spot</h4>
-                                                <p>In Map View Red Spot Represent Social Problem in your locality raised by  People</p>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                            <!--  <div class="card-icon">
-                                                <i class="far fa-map"></i>
-                                            </div>
-                                            --> 
-                                            <div class="card-body">
-                                                 <h4 class="card-title"  style="color:rgb(0, 255, 0);">Green Spot</h4>
-                                                <p>Green Spot Stated by Issue has been fixed by authorities or citizen.</p>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                             <!--  <div class="card-icon">
-                                                <i class="far fa-map"></i>
-                                            </div>
-                                            --> 
-                                            <div class="card-body">
-                                                 <h4 class="card-title"  style="color:rgb(0, 255, 0);"> Problem Filter </h4>
-                                                <p>Problem Filter Making Map Based Problem Montiring Easier by filtering them based on Different category of Social Problem Raised by People. </p>
-                                            </div>
-                                        </div>
-                                        <div class="card">
-                                             <!--  <div class="card-icon">
-                                                <i class="far fa-map"></i>
-                                            </div>
-                                            --> 
-                                            <div class="card-body">
-                                                 <h4 class="card-title"  style="color:rgb(0, 255, 0);">Details View </h4>
-                                                <p>When you will touch your any Marker in Map you will get to know the person reported issue and details information of problem in that co-ordinates </p>
-                                            </div>
-                                        </div>
-                                    </div> <!-- end of icon cards area -->
-                                    
-                                    <div class="text-area">
-                                        <h3>Monitoring Tools Evaluation</h3>
-                                        <p>Monitor the evolution of your finances and health state using tools integrated in Social MapWork. The generated real time reports can be filtered based on any <a class="turquoise" href="#your-link">desired criteria</a>.</p>
-                                    </div> <!-- end of text-area -->
-                                </div> <!-- end of col-md-8 -->
-                                <!-- end of text and icon cards area -->
-
-                                <!-- Image Pane -->
-                                <div class="col-md-4">
-                                    <img class="img-fluid" src="images/features-iphone-2.png" alt="alternative">
-                                </div>
-                                <!-- end of image pane -->
-                                    
-                            </div> <!-- end of row -->
-                        </div> <!-- end of container -->
-                    </div><!-- end of tab-pane -->
-                    <!-- end of tab -->
-
-                </div> <!-- end of tab-content -->
-                <!-- end of tabs content -->
-
-            </div> <!-- end of row --> 
-        </div> <!-- end of container --> 
-    </div> <!-- end of tabs -->
+            <h2 class="section-title">Features</h2>
+            <div class="feature-grid">
+                <div class="feature-tile">
+                    <span class="f-icon f-infra" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span>
+                    <h3>Report problems</h3>
+                    <p>Pin a local problem at its exact spot.</p>
+                </div>
+                <div class="feature-tile">
+                    <span class="f-icon f-infra" aria-hidden="true"><i class="fas fa-map"></i></span>
+                    <h3>Map</h3>
+                    <p>See problems reported near you.</p>
+                </div>
+                <div class="feature-tile">
+                    <span class="f-icon f-social" aria-hidden="true"><i class="fas fa-check-circle"></i></span>
+                    <h3>Verify nearby</h3>
+                    <p>Confirm or reject reports close to you.</p>
+                </div>
+                <div class="feature-tile">
+                    <span class="f-icon f-sos" aria-hidden="true"><i class="fas fa-life-ring"></i></span>
+                    <h3>SOS help</h3>
+                    <p>Ask for help, or help people nearby.</p>
+                </div>
+                <div class="feature-tile">
+                    <span class="f-icon f-sos" aria-hidden="true"><i class="fas fa-car"></i></span>
+                    <h3>Accident alerts</h3>
+                    <p>Alerts your emergency contacts after a detected crash.</p>
+                </div>
+                <div class="feature-tile">
+                    <span class="f-icon f-social" aria-hidden="true"><i class="fas fa-user-shield"></i></span>
+                    <h3>Community leaders</h3>
+                    <p>Verified leaders and authorities handle reports.</p>
+                </div>
+            </div> <!-- end of feature-grid -->
+        </div> <!-- end of container -->
+    </section>
     <!-- end of features -->
 
 
@@ -871,7 +614,7 @@ We invented Social MapWork to connect  citizens based on common/locality based i
             <div class="row">
                 <div class="col-md-4">
                     <div class="footer-col">
-                        <h4>Social <span style="color: chartreuse;"> MapWork</span></h4>
+                        <h4>Social <span class="accent"> MapWork</span></h4>
                         <p>We're passionate about creating the best mobile apps for the People Which can support them in making Good Society</p>
                     </div>
                 </div> <!-- end of col -->
@@ -881,7 +624,7 @@ We invented Social MapWork to connect  citizens based on common/locality based i
                         <ul class="list-unstyled li-space-lg">
                             <li class="media">
                                 <i class="fas fa-square"></i>
-                                <div class="media-body">Our technology Development Partner <a class="turquoise" href="#your-link">snipthink.org</a></div>
+                                <div class="media-body">Our technology Development Partner <a class="turquoise" href="https://www.snipthink.org">snipthink.org</a></div>
                             </li>
                             <li class="media">
                                 <i class="fas fa-square"></i>
@@ -949,6 +692,7 @@ We invented Social MapWork to connect  citizens based on common/locality based i
     <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="js/theme.js"></script> <!-- Light / dark theme toggle -->
 </body>
 </html>
 

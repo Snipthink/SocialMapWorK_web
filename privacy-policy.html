@@ -21,38 +21,23 @@
     <title>Privacy Policy - Social MapWork</title>
     
     <!-- Styles -->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:600,700" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/fontawesome-all.css" rel="stylesheet">
     <link href="css/swiper.css" rel="stylesheet">
 	<link href="css/magnific-popup.css" rel="stylesheet">
     <link href="css/styles.css" rel="stylesheet">
+    <link href="css/theme.css" rel="stylesheet">
 	
 	<!-- Favicon  -->
     <link rel="icon" href="images/favicon.png">
-    <style>
-        .pp-page .pp-toc { background: rgba(40,241,47,0.06); border-left: 4px solid #28f12f; padding: 1rem 1.25rem; margin: 1rem 0 2rem; }
-        .pp-page .pp-toc ol { margin: 0.5rem 0 0 1.1rem; padding: 0; }
-        .pp-page .pp-table-wrap { overflow-x: auto; margin-bottom: 1rem; }
-        .pp-page .pp-table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
-        .pp-page .pp-table th, .pp-page .pp-table td { border: 1px solid #d7dde0; padding: 0.6rem 0.75rem; vertical-align: top; text-align: left; }
-        .pp-page .pp-table th { background: #f2f5f6; }
-        .pp-page .text-container { margin-bottom: 2.25rem; scroll-margin-top: 90px; }
-        @media (max-width: 576px) { .pp-page .pp-table { font-size: 0.85rem; } }
-    </style>
+    <meta name="color-scheme" content="light dark">
+    <script>try{var t=localStorage.getItem('smw-theme');if(t==='dark'||t==='light')document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
 </head>
 <body data-spy="scroll" data-target=".fixed-top">
     
-    <!-- Preloader -->
-	<div class="spinner-wrapper">
-        <div class="spinner">
-            <div class="bounce1"></div>
-            <div class="bounce2"></div>
-            <div class="bounce3"></div>
-        </div>
-    </div>
-    <!-- end of preloader -->
     
 
     <!-- Navbar -->
@@ -69,6 +54,10 @@
             <span class="navbar-toggler-awesome fas fa-times"></span>
         </button>
         <!-- end of mobile menu toggle button -->
+        <!-- Light / dark theme toggle -->
+        <button class="theme-toggle" type="button" aria-label="Switch colour theme">
+            <i class="fas fa-moon" aria-hidden="true"></i><i class="fas fa-sun" aria-hidden="true"></i>
+        </button>
 
         <div class="collapse navbar-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ml-auto">
@@ -351,7 +340,7 @@
             <div class="row">
                 <div class="col-md-4">
                     <div class="footer-col">
-                        <h4>Social <span style="color: chartreuse;"> MapWork</span></h4>
+                        <h4>Social <span class="accent"> MapWork</span></h4>
                         <p>We're passionate about creating the best mobile apps for the People Which can support them in making Better Society</p>
                     </div>
                 </div> <!-- end of col -->
@@ -429,6 +418,7 @@
     <script src="js/morphext.min.js"></script> <!-- Morphtext rotating text in the header -->
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
+    <script src="js/theme.js"></script> <!-- Light / dark theme toggle -->
     
 </body>
 </html>
