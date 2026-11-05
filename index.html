@@ -141,9 +141,14 @@
             <div class="row align-items-center">
                 <div class="col-lg-6">
                     <p class="hero-prompt" aria-hidden="true">&gt; ./social_mapwork<span class="hero-cursor">_</span></p>
+                    <p class="hero-mission"><span class="hero-dot" aria-hidden="true"></span>Mission: a better society</p>
                     <h1>Social <span class="accent">MapWork</span></h1>
                     <p class="hero-tagline">Report local problems. Help your community.</p>
-                    <a class="btn-solid-lg" href="https://play.google.com/store/apps/details?id=com.snipthink.socialmapwork"><i class="fab fa-google-play" aria-hidden="true"></i>Get it on Google Play</a>
+                    <p class="hero-call">We are on a mission. We need you to be a part of change.</p>
+                    <div class="hero-actions">
+                        <a class="btn-solid-lg" href="https://play.google.com/store/apps/details?id=com.snipthink.socialmapwork"><i class="fab fa-google-play" aria-hidden="true"></i>Get it on Google Play</a>
+                        <a class="btn-outline-reg" href="#pledge">Join the mission</a>
+                    </div>
                 </div> <!-- end of col -->
                 <div class="col-lg-6">
                     <div class="hero-phone">
@@ -251,42 +256,154 @@
     <!-- Features -->
     <section id="features" class="features">
         <div class="container">
-            <h2 class="section-title">Features</h2>
-            <div class="feature-grid">
-                <div class="feature-tile">
-                    <span class="f-icon f-infra" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span>
-                    <h3>Report problems</h3>
-                    <p>Pin a local problem at its exact spot.</p>
-                </div>
-                <div class="feature-tile">
-                    <span class="f-icon f-infra" aria-hidden="true"><i class="fas fa-map"></i></span>
-                    <h3>Map</h3>
-                    <p>See problems reported near you.</p>
-                </div>
-                <div class="feature-tile">
-                    <span class="f-icon f-social" aria-hidden="true"><i class="fas fa-check-circle"></i></span>
-                    <h3>Verify nearby</h3>
-                    <p>Confirm or reject reports close to you.</p>
-                </div>
-                <div class="feature-tile">
-                    <span class="f-icon f-sos" aria-hidden="true"><i class="fas fa-life-ring"></i></span>
-                    <h3>SOS help</h3>
-                    <p>Ask for help, or help people nearby.</p>
-                </div>
-                <div class="feature-tile">
+            <h2 class="section-title">Choose your mission</h2>
+            <p class="section-sub">Six ways to make your area safer and cleaner. Tap one to see how.</p>
+            <div class="feature-grid mission-grid">
+                <button class="feature-tile mission-tile" type="button" id="mt-report" aria-controls="mp-report" aria-expanded="true">
+                    <span class="f-icon f-infra" aria-hidden="true"><i class="fas fa-bullhorn"></i></span>
+                    <span class="mission-title">Report problems</span>
+                    <span class="mission-line">Potholes, broken lights, water, unsafe spots.</span>
+                </button>
+                <button class="feature-tile mission-tile" type="button" id="mt-clean" aria-controls="mp-clean" aria-expanded="false">
+                    <span class="f-icon f-social" aria-hidden="true"><i class="fas fa-recycle"></i></span>
+                    <span class="mission-title">Clean your area</span>
+                    <span class="mission-line">Mark garbage, dumps and missing dustbins.</span>
+                </button>
+                <button class="feature-tile mission-tile" type="button" id="mt-accident" aria-controls="mp-accident" aria-expanded="false">
                     <span class="f-icon f-sos" aria-hidden="true"><i class="fas fa-car"></i></span>
-                    <h3>Accident alerts</h3>
-                    <p>Alerts your emergency contacts after a detected crash.</p>
-                </div>
-                <div class="feature-tile">
-                    <span class="f-icon f-social" aria-hidden="true"><i class="fas fa-user-shield"></i></span>
-                    <h3>Community leaders</h3>
-                    <p>Verified leaders and authorities handle reports.</p>
-                </div>
+                    <span class="mission-title">Accident alerts</span>
+                    <span class="mission-line">If a crash is detected, your contacts get your location.</span>
+                </button>
+                <button class="feature-tile mission-tile" type="button" id="mt-helper" aria-controls="mp-helper" aria-expanded="false">
+                    <span class="f-icon f-sos" aria-hidden="true"><i class="fas fa-hands-helping"></i></span>
+                    <span class="mission-title">Be a helper</span>
+                    <span class="mission-line">Get SOS requests from people near you.</span>
+                </button>
+                <button class="feature-tile mission-tile" type="button" id="mt-disaster" aria-controls="mp-disaster" aria-expanded="false">
+                    <span class="f-icon f-sos" aria-hidden="true"><i class="fas fa-life-ring"></i></span>
+                    <span class="mission-title">Disaster help</span>
+                    <span class="mission-line">Report a disaster and what people need.</span>
+                </button>
+                <button class="feature-tile mission-tile" type="button" id="mt-accountable" aria-controls="mp-accountable" aria-expanded="false">
+                    <span class="f-icon f-infra" aria-hidden="true"><i class="fas fa-user-shield"></i></span>
+                    <span class="mission-title">Hold it accountable</span>
+                    <span class="mission-line">Verify reports and follow them until fixed.</span>
+                </button>
             </div> <!-- end of feature-grid -->
+            <div class="mission-panels">
+                <div class="mission-panel" id="mp-report" role="region" aria-labelledby="mt-report">
+                    <h3><span class="f-icon f-mini f-infra" aria-hidden="true"><i class="fas fa-bullhorn"></i></span>Report problems</h3>
+                    <p class="mission-why">A problem nobody reports is a problem nobody fixes. Your report puts it on the map, at its exact spot.</p>
+                    <ol class="mission-steps">
+                        <li>Open the app and tap to add a report.</li>
+                        <li>Pick the category and add details.</li>
+                        <li>Take an evidence photo if you can, then submit.</li>
+                    </ol>
+                    <a class="btn-solid-reg" href="https://play.google.com/store/apps/details?id=com.snipthink.socialmapwork"><i class="fab fa-google-play" aria-hidden="true"></i>Start this mission</a>
+                </div>
+                <div class="mission-panel" id="mp-clean" role="region" aria-labelledby="mt-clean">
+                    <h3><span class="f-icon f-mini f-social" aria-hidden="true"><i class="fas fa-recycle"></i></span>Clean your area</h3>
+                    <p class="mission-why">Clean streets start with one spot on the map. Show where a bin or a clean-up is needed, and get your neighbours to join.</p>
+                    <ol class="mission-steps">
+                        <li>Report a garbage pile, dump or "dustbin required" spot.</li>
+                        <li>Ask friends nearby to confirm it.</li>
+                        <li>Follow it on the map until it turns green.</li>
+                    </ol>
+                    <a class="btn-solid-reg" href="https://play.google.com/store/apps/details?id=com.snipthink.socialmapwork"><i class="fab fa-google-play" aria-hidden="true"></i>Start this mission</a>
+                </div>
+                <div class="mission-panel" id="mp-accident" role="region" aria-labelledby="mt-accident">
+                    <h3><span class="f-icon f-mini f-sos" aria-hidden="true"><i class="fas fa-car"></i></span>Accident alerts</h3>
+                    <p class="mission-why">In an accident, minutes matter. If the app detects a crash and you do not cancel, it texts your location to your emergency contacts and calls the first one.</p>
+                    <ol class="mission-steps">
+                        <li>Open Profile and turn on Accident alerts.</li>
+                        <li>Add emergency contacts who agree to be alerted.</li>
+                        <li>Allow the permissions the app asks for.</li>
+                    </ol>
+                    <p class="mission-safety"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Social MapWork is not an emergency service. In danger, always call <strong>112</strong>.</p>
+                    <a class="btn-solid-reg" href="https://play.google.com/store/apps/details?id=com.snipthink.socialmapwork"><i class="fab fa-google-play" aria-hidden="true"></i>Start this mission</a>
+                </div>
+                <div class="mission-panel" id="mp-helper" role="region" aria-labelledby="mt-helper">
+                    <h3><span class="f-icon f-mini f-sos" aria-hidden="true"><i class="fas fa-hands-helping"></i></span>Be a helper</h3>
+                    <p class="mission-why">Help is often just a street away. With Help people nearby on, you can see SOS requests near you and choose to respond.</p>
+                    <ol class="mission-steps">
+                        <li>Keep Help people nearby on in Profile.</li>
+                        <li>Allow location so requests near you can reach you.</li>
+                        <li>When an SOS comes in, accept it only if you can help safely.</li>
+                    </ol>
+                    <p class="mission-safety"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Social MapWork is not an emergency service. In danger, always call <strong>112</strong>.</p>
+                    <a class="btn-solid-reg" href="https://play.google.com/store/apps/details?id=com.snipthink.socialmapwork"><i class="fab fa-google-play" aria-hidden="true"></i>Start this mission</a>
+                </div>
+                <div class="mission-panel" id="mp-disaster" role="region" aria-labelledby="mt-disaster">
+                    <h3><span class="f-icon f-mini f-sos" aria-hidden="true"><i class="fas fa-life-ring"></i></span>Disaster help</h3>
+                    <p class="mission-why">In floods, fires or storms, rescuers need to know where help is needed. Report what is needed: water, food, shelter, medical or rescue.</p>
+                    <ol class="mission-steps">
+                        <li>Open the app and report the disaster.</li>
+                        <li>Choose the type of help needed.</li>
+                        <li>Stay safe and follow official instructions.</li>
+                    </ol>
+                    <p class="mission-safety"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Social MapWork is not an emergency service. In danger, always call <strong>112</strong>.</p>
+                    <a class="btn-solid-reg" href="https://play.google.com/store/apps/details?id=com.snipthink.socialmapwork"><i class="fab fa-google-play" aria-hidden="true"></i>Start this mission</a>
+                </div>
+                <div class="mission-panel" id="mp-accountable" role="region" aria-labelledby="mt-accountable">
+                    <h3><span class="f-icon f-mini f-infra" aria-hidden="true"><i class="fas fa-user-shield"></i></span>Hold it accountable</h3>
+                    <p class="mission-why">Reports are verified by the community and handled by verified leaders and authorities, so every problem is followed until it is solved.</p>
+                    <ol class="mission-steps">
+                        <li>Confirm or reject reports close to you.</li>
+                        <li>Follow the status of the problems you reported.</li>
+                        <li>Thank the people and authorities who fixed them.</li>
+                    </ol>
+                    <a class="btn-solid-reg" href="https://play.google.com/store/apps/details?id=com.snipthink.socialmapwork"><i class="fab fa-google-play" aria-hidden="true"></i>Start this mission</a>
+                </div>
+            </div> <!-- end of mission-panels -->
         </div> <!-- end of container -->
     </section>
     <!-- end of features -->
+
+
+    <!-- Accountability -->
+    <section id="accountability" class="journey">
+        <div class="container">
+            <h2 class="section-title">How a problem gets solved</h2>
+            <p class="section-sub">Every report is followed, step by step, until it is fixed.</p>
+            <ol class="journey-steps">
+                <li class="journey-step"><span class="journey-icon f-infra" aria-hidden="true"><i class="fas fa-map-marker-alt"></i></span><span class="journey-num">01</span><h3>Report</h3><p>You pin the problem at its exact spot, with details and a photo.</p></li>
+                <li class="journey-step"><span class="journey-icon f-social" aria-hidden="true"><i class="fas fa-check-circle"></i></span><span class="journey-num">02</span><h3>Verify</h3><p>People nearby confirm it is real, so fake reports are filtered out.</p></li>
+                <li class="journey-step"><span class="journey-icon f-social" aria-hidden="true"><i class="fas fa-user-shield"></i></span><span class="journey-num">03</span><h3>Act</h3><p>Verified community leaders and authorities take it up.</p></li>
+                <li class="journey-step"><span class="journey-icon f-done" aria-hidden="true"><i class="fas fa-flag-checkered"></i></span><span class="journey-num">04</span><h3>Fixed</h3><p>The spot turns green on the map for everyone to see.</p></li>
+            </ol>
+        </div> <!-- end of container -->
+    </section>
+    <!-- end of accountability -->
+
+
+    <!-- Pledge -->
+    <section id="pledge" class="pledge">
+        <div class="container">
+            <div class="pledge-card">
+                <p class="pledge-kicker" aria-hidden="true">&gt; mission.join()</p>
+                <h2>Be a part of change</h2>
+                <p class="pledge-intro">Safer roads. Faster help. Cleaner streets. Problems that get fixed. Choose what you will do:</p>
+                <fieldset class="pledge-options">
+                    <legend class="sr-only">Your commitments</legend>
+                    <label class="pledge-option"><input type="checkbox" value="report"><span class="pledge-box" aria-hidden="true"><i class="fas fa-check"></i></span><span>I will report problems I see</span></label>
+                    <label class="pledge-option"><input type="checkbox" value="clean"><span class="pledge-box" aria-hidden="true"><i class="fas fa-check"></i></span><span>I will help keep my area clean</span></label>
+                    <label class="pledge-option"><input type="checkbox" value="accident"><span class="pledge-box" aria-hidden="true"><i class="fas fa-check"></i></span><span>I will turn on accident alerts</span></label>
+                    <label class="pledge-option"><input type="checkbox" value="helper"><span class="pledge-box" aria-hidden="true"><i class="fas fa-check"></i></span><span>I will help people nearby in an SOS</span></label>
+                </fieldset>
+                <div class="pledge-progress" aria-hidden="true"><span class="pledge-bar"></span></div>
+                <p class="pledge-status" aria-live="polite">0 of 4 chosen</p>
+                <div class="pledge-done" hidden>
+                    <p class="pledge-accepted"><i class="fas fa-flag" aria-hidden="true"></i>Mission accepted. Thank you for joining.</p>
+                    <div class="pledge-actions">
+                        <a class="btn-solid-reg" href="https://play.google.com/store/apps/details?id=com.snipthink.socialmapwork"><i class="fab fa-google-play" aria-hidden="true"></i>Get the app</a>
+                        <button class="btn-outline-reg pledge-share" type="button"><i class="fas fa-share-alt" aria-hidden="true"></i>Share the mission</button>
+                    </div>
+                </div>
+                <p class="pledge-note">Your choices stay on this device only.</p>
+            </div> <!-- end of pledge-card -->
+        </div> <!-- end of container -->
+    </section>
+    <!-- end of pledge -->
 
 
     <!-- Video -->
@@ -693,6 +810,7 @@ We invented Social MapWork to connect  citizens based on common/locality based i
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
     <script src="js/theme.js"></script> <!-- Light / dark theme toggle -->
+    <script src="js/mission.js"></script> <!-- Mission cards, journey and pledge -->
 </body>
 </html>
 
