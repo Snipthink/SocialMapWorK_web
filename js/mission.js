@@ -4,6 +4,73 @@
 (function () {
 	var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+	/* ---------- Accident alert story player ---------- */
+	var player = document.querySelector('.story-player');
+	if (player) {
+		var chapters = player.querySelectorAll('.story-chapter');
+		var controls = player.querySelector('.story-controls');
+		var prevBtn = player.querySelector('.story-prev');
+		var nextBtn = player.querySelector('.story-next');
+		var playBtn = player.querySelector('.story-play');
+		var dots = player.querySelectorAll('.story-dot');
+		var index = 0;
+		var timer = null;
+		var STEP_MS = 5500;
+
+		player.classList.add('story-js');
+		controls.hidden = false;
+
+		var setPlayLabel = function (state) {
+			var icon = state === 'playing' ? 'fa-pause' : (state === 'ended' ? 'fa-redo' : 'fa-play');
+			var text = state === 'playing' ? 'Pause' : (state === 'ended' ? 'Replay the story' : 'Play the story');
+			playBtn.innerHTML = '<i class="fas ' + icon + '" aria-hidden="true"></i><span>' + text + '</span>';
+		};
+
+		var show = function (i) {
+			index = Math.max(0, Math.min(chapters.length - 1, i));
+			for (var c = 0; c < chapters.length; c++) {
+				var on = c === index;
+				chapters[c].classList.toggle('is-active', on);
+				if (dots[c]) {
+					dots[c].classList.toggle('is-active', on);
+					if (on) dots[c].setAttribute('aria-current', 'step'); else dots[c].removeAttribute('aria-current');
+				}
+			}
+			prevBtn.disabled = index === 0;
+			nextBtn.disabled = index === chapters.length - 1;
+		};
+
+		var stop = function (state) {
+			if (timer) { clearInterval(timer); timer = null; }
+			setPlayLabel(state || 'paused');
+		};
+
+		var play = function () {
+			if (index === chapters.length - 1) show(0);
+			setPlayLabel('playing');
+			timer = setInterval(function () {
+				if (index >= chapters.length - 1) { stop('ended'); return; }
+				show(index + 1);
+				if (index === chapters.length - 1) stop('ended');
+			}, STEP_MS);
+		};
+
+		playBtn.addEventListener('click', function () { if (timer) stop(); else play(); });
+		prevBtn.addEventListener('click', function () { stop(); show(index - 1); });
+		nextBtn.addEventListener('click', function () { stop(); show(index + 1); });
+		for (var d = 0; d < dots.length; d++) {
+			(function (n) { dots[n].addEventListener('click', function () { stop(); show(n); }); })(d);
+		}
+		player.addEventListener('keydown', function (e) {
+			if (e.target.closest && e.target.closest('.story-controls')) {
+				if (e.key === 'ArrowRight') { stop(); show(index + 1); }
+				if (e.key === 'ArrowLeft') { stop(); show(index - 1); }
+			}
+		});
+		show(0);
+		setPlayLabel('paused');
+	}
+
 	/* ---------- Mission cards ---------- */
 	var tiles = document.querySelectorAll('.mission-tile');
 	var panels = document.querySelectorAll('.mission-panel');
